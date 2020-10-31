@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nizar - Konter</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* background-color: ; */
+            /* padding: ; */
+        }
+
+        .border {
+            border: 1px solid;
+        }
+
+        .container {
+            width: 100%;
+            padding: 1%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body class="border">
+    <div class="container border">
+
+        <!-- satu welcome -->
+        <style>
+            .cont-1 {
+                width: 100%;
+                padding: 3%;
+                box-sizing: border-box;
+            }
+        </style>
+        <div class="cont-1 border">
+            <h3>Nizar - Center</h3>
+            <p>Pilih kuota atau paket yang diinginkan</p>
+        </div>
+        <!-- satu welcome -->
+
+        <!-- dua option -->
+        <style>
+            .cont-2 {
+                width: 100%;
+                box-sizing: border-box;
+                margin-top: 1rem;
+            }
+
+            .cont-2 .judul-provider {
+                padding: 1% 0 1% 0;
+                margin: 0 0 1.5% 0;
+            }
+
+            .cont-2 .judul-provider p {
+                text-align: center;
+            }
+
+            .cont-boxs {
+                box-sizing: border-box;
+            }
+
+            .provider-opsi ul {
+                display: flex;
+                padding: 0;
+                margin: 0;
+            }
+
+            .provider-opsi ul li {
+                width: 25%;
+                list-style-type: none;
+            }
+
+            .provider-opsi a {
+                display: block;
+                text-align: center;
+                padding: 3%;
+                text-decoration: none;
+                color: black;
+                background-color: cornflowerblue;
+            }
+
+            .provider-opsi a:hover {
+                color: white;
+                background-color: rgb(9, 34, 80);
+
+            }
+
+            /* #smartfren {
+                display: none;
+            }
+
+            #telkomsel {
+                display: none;
+            } */
+        </style>
+        <div class="cont-2 border">
+
+            <div class="judul-provider border cont-boxs">
+                <p><b>Provider</b></p>
+            </div>
+
+            <div class="provider-opsi border cont-boxs">
+                <ul class="border cont-boxs">
+                    <li><a onclick="smartfrenOn()" href="#">Smartfren</a></li>
+                    <li><a onclick="telkomselOn()" href="#">Tekomsel</a></li>
+                    <li><a onclick="indosatOn()" href="#">Indosat</a></li>
+                    <li><a onclick="xlOn()" href="#">XL Axiata</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- dua option -->
+
+        <!-- tiga details -->
+        <style>
+            .cont-3 {
+                width: 100%;
+                margin: 2% 0 0 0;
+            }
+
+            .cont-3 .details {
+                /* display: none; */
+                padding: 5%;
+            }
+
+            .cont-3 .details input {
+                width: 100%;
+                padding: 2%;
+                /* box-sizing: border-box; */
+            }
+
+            .cont-3 .details {
+                display: none;
+            }
+
+            .cont-3 .details .user {
+                margin-top: 5%;
+            }
+
+            input#namaCust {
+                /* width: 80%; */
+                box-sizing: border-box;
+            }
+        </style>
+        <div class="cont-3 cont-boxs border">
+
+            <!-- payment / booking smartfren -->
+            <div id="smartfren_details" class="details border">
+                <script>var submitted = false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+    {window.location='https://google.com';}"></iframe>
+
+                <form
+                    action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfunWSATt3Diw530TgCZiqbAdglNMvU1NE1lOJ3TWQtbRD0JA/formResponse"
+                    method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+                    <!-- user name -->
+                    <div class="user name cont-boxs">
+                        <label for="namaCust">Nama</label>
+                        <input class="cont-boxs" type="text" name="entry.784812664" id="namaCust" required>
+                    </div>
+                    <!-- user name -->
+
+                    <!-- user number -->
+                    <div class="user number cont-boxs">
+                        <label for="noCust">No hp/wa</label>
+                        <input class="cont-boxs" type="text" minlength="11" maxlength="13" name="entry.1810157358"
+                            id="noCust" required>
+                    </div>
+                    <!-- user number -->
+
+                    <!-- user confirm provider -->
+                    <div class="user confirm">
+                        <label for="">Provider yang dipilih</label>
+                        <select name="entry.1113086974" id="">
+                            <option name="entry.1525005752" value="smartfren"` selected>Smartfren</option>
+                        </select>
+                    </div>
+                    <!-- user confirm provider -->
+
+                    <!-- smartfren - provider -->
+                    <div class="user paket-smartfren">
+                        <label for="paket-smartfren">Paket</label>
+                        <select name="entry.1113086974" id="paket-opt" required>
+                            <option disabled selected>--silakan dipilih--</option>
+                            <option value="unl65k">Unlimited 65k [Rp 65.000]</option>
+                            <option value="unl75k">Unlimited 75k [Rp 75.000]</option>
+                            <option value="unl80k">Unlimited 80k [Rp 80.000]</option>
+                        </select>
+                    </div>
+                    <!-- smartfren - provider -->
+
+                    <!-- btn pesan -->
+                    <style>
+                        .pesan-btn {
+                            margin: 5% 0 0 0;
+                        }
+
+                        .pesan-btn button {
+                            margin: 0 auto;
+                            display: block;
+                            text-transform: capitalize;
+                            padding: 2% 2.5% 2% 2.5%;
+                            border: none;
+                            background-color: rgb(171, 223, 151);
+                        }
+
+                        .pesan-btn button:hover {
+                            color: white;
+                            background-color: rgb(21, 58, 6);
+                        }
+                    </style>
+                    <div class="pesan-btn border cont-boxs">
+                        <button type="submit">pesan</button>
+                    </div>
+                    <!-- btn pesan -->
+                </form>
+            </div>
+            <!-- payment / booking smartfren-->
+
+            <!-- payment / booking telkomsel -->
+            <div id="telkomsel_details" class="details border">
+                <form action="" onsubmit="return validd()">
+
+                    <!-- user name -->
+                    <div class="user name cont-boxs">
+                        <label for="namaCust">Nama</label>
+                        <input class="cont-boxs" type="text" name="namaCust" id="namaCust" required autofocus>
+                    </div>
+                    <!-- user name -->
+
+                    <!-- user number -->
+                    <div class="user number cont-boxs">
+                        <label for="noCust">No hp/wa</label>
+                        <input class="cont-boxs" type="text" minlength="11" maxlength="13" name="noCust" id="noCust"
+                            required>
+                    </div>
+                    <!-- user number -->
+
+                    <!-- user confirm provider -->
+                    <div class="user confirm">
+                        <label for="">Provider yang dipilih</label>
+                        <select name="" id="">
+                            <option value="telkomsel" disabled selected>Telkomsel</option>
+                        </select>
+                    </div>
+                    <!-- user confirm provider -->
+
+                    <!-- smartfren - provider -->
+                    <div class="user paket-smartfren">
+                        <label for="paket-smartfren">Paket</label>
+                        <select name="" id="paket-opt" required>
+                            <option disabled selected>--silakan dipilih--</option>
+                            <option value="unl65k">Telkomsel 65k [Rp 65.000]</option>
+                            <option value="unl75k">Unlimited 75k [Rp 75.000]</option>
+                            <option value="unl80k">Unlimited 80k [Rp 80.000]</option>
+                        </select>
+                    </div>
+                    <!-- smartfren - provider -->
+
+                    <!-- btn pesan -->
+                    <style>
+                        .pesan-btn {
+                            margin: 5% 0 0 0;
+                        }
+
+                        .pesan-btn button {
+                            margin: 0 auto;
+                            display: block;
+                            text-transform: capitalize;
+                            padding: 2% 2.5% 2% 2.5%;
+                            border: none;
+                            background-color: rgb(171, 223, 151);
+                        }
+
+                        .pesan-btn button:hover {
+                            color: white;
+                            background-color: rgb(21, 58, 6);
+                        }
+                    </style>
+                    <div class="pesan-btn border cont-boxs">
+                        <button type="submit">pesan</button>
+                    </div>
+                    <!-- btn pesan -->
+                </form>
+            </div>
+            <!-- payment / booking telkomsel-->
+
+            <!-- payment / booking Indosat -->
+            <div id="indosat_details" class="details border">
+                <form action="" onsubmit="return validd()">
+
+                    <!-- user name -->
+                    <div class="user name cont-boxs">
+                        <label for="namaCust">Nama</label>
+                        <input class="cont-boxs" type="text" name="namaCust" id="namaCust" required autofocus>
+                    </div>
+                    <!-- user name -->
+
+                    <!-- user number -->
+                    <div class="user number cont-boxs">
+                        <label for="noCust">No hp/wa</label>
+                        <input class="cont-boxs" type="text" minlength="11" maxlength="13" name="noCust" id="noCust"
+                            required>
+                    </div>
+                    <!-- user number -->
+
+                    <!-- user confirm provider -->
+                    <div class="user confirm">
+                        <label for="">Provider yang dipilih</label>
+                        <select name="" id="">
+                            <option value="indosat" disabled selected>Indosat</option>
+                        </select>
+                    </div>
+                    <!-- user confirm provider -->
+
+                    <!-- smartfren - provider -->
+                    <div class="user paket-indosat">
+                        <label for="paket-smartfren">Paket</label>
+                        <select name="" id="paket-opt" required>
+                            <option disabled selected>--silakan dipilih--</option>
+                            <option value="unl65k">Telkomsel 65k [Rp 65.000]</option>
+                            <option value="unl75k">Unlimited 75k [Rp 75.000]</option>
+                            <option value="unl80k">Unlimited 80k [Rp 80.000]</option>
+                        </select>
+                    </div>
+                    <!-- indosat - provider -->
+
+                    <!-- btn pesan -->
+                    <style>
+                        .pesan-btn {
+                            margin: 5% 0 0 0;
+                        }
+
+                        .pesan-btn button {
+                            margin: 0 auto;
+                            display: block;
+                            text-transform: capitalize;
+                            padding: 2% 2.5% 2% 2.5%;
+                            border: none;
+                            background-color: rgb(171, 223, 151);
+                        }
+
+                        .pesan-btn button:hover {
+                            color: white;
+                            background-color: rgb(21, 58, 6);
+                        }
+                    </style>
+                    <div class="pesan-btn border cont-boxs">
+                        <button type="submit">pesan</button>
+                    </div>
+                    <!-- btn pesan -->
+                </form>
+            </div>
+            <!-- payment / booking indosat-->
+
+            <!-- payment / booking Xl -->
+            <div id="xl_details" class="details border">
+                <form action="" onsubmit="return validd()">
+
+                    <!-- user name -->
+                    <div class="user name cont-boxs">
+                        <label for="namaCust">Nama</label>
+                        <input class="cont-boxs" type="text" name="namaCust" id="namaCust" required autofocus>
+                    </div>
+                    <!-- user name -->
+
+                    <!-- user number -->
+                    <div class="user number cont-boxs">
+                        <label for="noCust">No hp/wa</label>
+                        <input class="cont-boxs" type="text" minlength="11" maxlength="13" name="noCust" id="noCust"
+                            required>
+                    </div>
+                    <!-- user number -->
+
+                    <!-- user confirm provider -->
+                    <div class="user confirm">
+                        <label for="">Provider yang dipilih</label>
+                        <select name="" id="">
+                            <option value="xl" disabled selected>Xl Axiata</option>
+                        </select>
+                    </div>
+                    <!-- user confirm provider -->
+
+                    <!-- smartfren - provider -->
+                    <div class="user paket-xl">
+                        <label for="paket-xl">Paket</label>
+                        <select name="" id="paket-opt" required>
+                            <option disabled selected>--silakan dipilih--</option>
+                            <option value="unl65k">Telkomsel 65k [Rp 65.000]</option>
+                            <option value="unl75k">Unlimited 75k [Rp 75.000]</option>
+                            <option value="unl80k">Unlimited 80k [Rp 80.000]</option>
+                        </select>
+                    </div>
+                    <!-- indosat - provider -->
+
+                    <!-- btn pesan -->
+                    <style>
+                        .pesan-btn {
+                            margin: 5% 0 0 0;
+                        }
+
+                        .pesan-btn button {
+                            margin: 0 auto;
+                            display: block;
+                            text-transform: capitalize;
+                            padding: 2% 2.5% 2% 2.5%;
+                            border: none;
+                            background-color: rgb(171, 223, 151);
+                        }
+
+                        .pesan-btn button:hover {
+                            color: white;
+                            background-color: rgb(21, 58, 6);
+                        }
+                    </style>
+                    <div class="pesan-btn border cont-boxs">
+                        <button type="submit">pesan</button>
+                    </div>
+                    <!-- btn pesan -->
+                </form>
+            </div>
+            <!-- payment / booking indosat-->
+
+        </div>
+        <!-- tiga details -->
+
+
+
+    </div>
+
+
+    <script>
+        var smartfrenDetails = document.getElementById("smartfren_details");
+        var telkomselDetails = document.getElementById("telkomsel_details");
+        var indosatDetails = document.getElementById("indosat_details");
+        var telkomselDetails = document.getElementById("telkomsel_details");
+        var xlDetails = document.getElementById("xl_details");
+
+        function smartfrenOn() {
+            smartfrenDetails.style.display = "block";
+            telkomselDetails.style.display = "";
+            indosatDetails.style.display = "";
+            xlDetails.style.display = "";
+        }
+
+        function telkomselOn() {
+            telkomselDetails.style.display = "block";
+            smartfrenDetails.style.display = "";
+            indosatDetails.style.display = "";
+            xlDetails.style.display = "";
+        }
+
+        function indosatOn() {
+            indosatDetails.style.display = "block";
+            telkomselDetails.style.display = "";
+            smartfrenDetails.style.display = "";
+            xlDetails.style.display = "";
+        }
+
+        function xlOn() {
+            xlDetails.style.display = "block";
+            indosatDetails.style.display = "";
+            telkomselDetails.style.display = "";
+            smartfrenDetails.style.display = "";
+        }
+
+
+    </script>
+</body>
+
+</html>

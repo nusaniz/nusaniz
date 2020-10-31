@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hai</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/font-awesome/css/all.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            margin-top: 30px;
+            /* border: 1px solid; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- content 1 -->
+        <style>
+            .cont1-card {
+                max-width: 300px;
+                /* padding: 10px; */
+                padding: 30px 20px 30px 20px;
+                box-sizing: border-box;
+                /* border-color: grey; */
+                /* cursor: pointer; */
+                border-radius: 10px;
+                border: 1px solid #8080804f;
+
+            }
+
+            .cont1-card:hover {
+                transform: scale(1.1);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+            }
+
+            .card-tab1 {
+                display: flex;
+                box-sizing: border-box;
+                /* border: 1px solid; */
+            }
+
+            .card-tab1 .card-name {
+                /* padding-left: px; */
+                width: 60%;
+                box-sizing: border-box;
+                /* border: 1px solid; */
+            }
+
+            .card-name h3 {
+                font-size: 2.5rem;
+                margin: 0;
+                text-transform: capitalize;
+            }
+
+            .card-tab1 .card-img {
+                width: 40%;
+                box-sizing: border-box;
+                /* border: 1px solid; */
+            }
+
+            .card-tab1 .card-img img {
+                width: 100%;
+                display: block;
+            }
+
+            .card-tab2 {
+                margin-top: 25px;
+                box-sizing: border-box;
+                /* border: 1px solid; */
+
+            }
+
+            .card-tab2 p {
+                margin: 0;
+            }
+
+            .card-name i {
+                font-size: 20px;
+            }
+
+            .card-name i:hover {
+                cursor: pointer;
+            }
+        </style>
+        <div class="content1">
+            <div class="cont1-card">
+                <div class="card-tab1">
+                    <div class="card-name">
+                        <h3>bill gates <i class="fa fa-share" onclick="tampil()"></i></h3>
+                    </div>
+
+                    <div class="card-img">
+                        <img src="/media/backblue.gif" alt="">
+                    </div>
+                </div>
+
+                <div class="card-tab2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat alias debitis optio. Fugiat
+                        impedit hic neque quia. Numquam sint rerum voluptatibus in officiis ad harum aliquid
+                        consequuntur eligendi earum?</p>
+                    <style>
+                        .tampil {
+                            width: 100%;
+                            margin-top: 20px;
+                            display: flex;
+                            box-sizing: border-box;
+                            display: none;
+                            /* border: 1px solid; */
+                        }
+
+                        .tampil .desc {
+                            margin-right: 5px;
+                            border-radius: 25px;
+                            padding-left: 20px;
+                            width: 90%;
+                            border: 1px solid;
+                        }
+
+                        .tampil .close {
+                            width: 10%;
+                            /* border: 1px solid; */
+                        }
+
+                        .tampil .close i {
+                            width: 100%;
+                            display: block;
+                            cursor: pointer;
+                        }
+                    </style>
+                    <div class="tampil" id="tampil">
+                        <div class="desc">
+                            <h3>hai</h3>
+                            <!-- <input type="text" name="" id=""> -->
+                        </div>
+
+                        <div class="close">
+                            <i onclick="keluar()" class="fa fa-window-close" id="close"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- content 1 -->
+
+            <script>
+                function tampil() {
+                    var tampil = document.getElementById("tampil")
+                    tampil.style.display = "block"
+                }
+                function keluar() {
+                    var tampil = document.getElementById("tampil")
+                    tampil.style.display = ""
+                }
+            </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+</body>
+
+</html>

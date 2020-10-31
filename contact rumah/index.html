@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- sidemenu -->
+    <style>
+        .border {
+            border: 1px solid;
+        }
+
+        .side {
+            width: 50%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            box-sizing: border-box;
+            display: none;
+            background-color: #008080;
+        }
+
+        .side ul {
+            width: 100%;
+            padding: 0;
+            /* box-sizing: border-box; */
+            /* display: flex; */
+            /* background-color: yellowgreen; */
+            list-style-type: none;
+            /* border: 1px solid; */
+        }
+
+        .side ul li {
+            box-sizing: border-box;
+            /* border: 1px solid; */
+            /* border-bottom-width: 2%; */
+        }
+
+        .side ul li a {
+            width: 100%;
+            padding: 4%;
+            text-transform: capitalize;
+            display: flex;
+            box-sizing: border-box;
+            padding-left: 15%;
+            /* display: inline-block; */
+            /* background-color: coral; */
+            text-decoration: none;
+            background-color: #008080;
+            color: white;
+        }
+
+        .side ul li a:hover {
+            background-color: #035e5e;
+            border-bottom: 1px solid;
+            padding-left: 25%;
+            letter-spacing: 0.1rem;
+            /* background-color: yellowgreen; */
+        }
+
+        .side .judul-side {
+            width: 90%;
+            margin-top: 10%;
+            padding: 2%;
+        }
+
+        .side .judul-side h3 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .close-side h2 {
+            margin: 0;
+        }
+
+        .close-side h2:hover {
+            cursor: pointer;
+        }
+
+        .close-side {
+            width: 20%;
+            box-sizing: border-box;
+            padding: 0;
+        }
+
+        .title-side {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+        }
+
+        .footer-side {
+            padding-top: 50%;
+        }
+
+        .footer-side p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .footer-side p a {
+            text-decoration: none;
+            font-size: 80%;
+            color: white;
+        }
+    </style>
+    <div id="side" class="side">
+        <!-- satu -->
+        <div class="title-side">
+            <div class="judul-side ">
+                <h3>Materi</h3>
+            </div>
+            <div class="close-side ">
+                <h2 onclick="ttp()">x</h2>
+            </div>
+        </div>
+        <!-- satu -->
+
+        <!-- dua -->
+        <ul>
+            <li><a onclick="" href="#">Tentang</a></li>
+            <li><a onclick="" href="#">Informasi</a></li>
+            <li><a onclick="" href="#">Email</a></li>
+        </ul>
+        <!-- dua -->
+
+        <!-- tiga -->
+        <div class="footer-side">
+            <p><b><a href="https://nusaniz.github.io/rumahnizar.com/">Rumahnizar.com</a></b></p>
+        </div>
+        <!-- tiga -->
+    </div>
+    <!-- sidemenu -->
+
+
+
+
+    <!-- segment 1 -->
+    <style>
+        .seg-1 {
+            width: 100%;
+            padding: 5%;
+            box-sizing: border-box;
+            /* text-align: center; */
+            /* border: 1px solid; */
+        }
+
+        .seg-1 h1 {
+            margin: 0;
+            font-size: 150%;
+        }
+
+        .seg-1 p {
+            margin: 0;
+        }
+    </style>
+    <div class="seg-1 border">
+        <h1>Selamat datang,</h1>
+        <p>Silahkan tinggalkan pesan anda..</p>
+        <button onclick="bukamenu()">menu</button>
+    </div>
+    <!-- segment 1 -->
+
+    <!-- segment 2 -->
+    <style>
+        .seg-2 {
+            margin-top: 1rem;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0.5rem;
+            padding-bottom: 1rem;
+            border: 1px solid;
+        }
+
+        .seg-2 .user {
+            margin-top: 0.5rem;
+        }
+
+        .seg-2 .btn {
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
+            /* border: 1px solid; */
+        }
+
+        .seg-2 h3 {
+            text-align: center;
+            padding-bottom: 0.8rem;
+            border-bottom: 1px solid;
+            /* border: 1px solid; */
+            margin: 0.2rem 0 0.2rem 0;
+        }
+
+        .seg-2 .btn button {
+            font-size: 1rem;
+        }
+
+        .seg-2 form input {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .seg-2 form input:focus {
+            /* border: 1px solid yellowgreen; */
+            /* box-shadow: 3px 0px 3px black; */
+            /* background-color: teal; */
+        }
+
+        .seg-2 form textarea:focus {
+            /* box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.308); */
+            /* background-color: teal; */
+        }
+
+        .seg-2 form textarea {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .seg-2 form .user p {
+            margin: 0;
+        }
+
+        .seg-2 .user.nama input {
+            padding: 0.2rem;
+        }
+    </style>
+    <div class="seg-2">
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)
+    {window.location='success.html';}"></iframe>
+
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfqUHtR0GY5R8NBoJ8zk5O4Uz0rrjWZf3OPdWTb69qg03kQTw/formResponse"
+            target="hidden_iframe" method="POST" onsubmit="submitted=true">
+
+            <h3>Isi pesan</h3>
+
+            <div class="user nama">
+                <p id="notice-nama"></p>
+                <label for="nama"><b>Nama</b></label>
+                <input id="nama" type="text" name="entry.867353645" required autofocus>
+            </div>
+            <div class="user pesan">
+                <p id="notice-pesan"></p>
+                <label for="pesan"><b>Pesan</b></label>
+                <textarea name="entry.324445980" id="pesan" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="btn">
+                <button onclick="kirim()" type="submit">kirim</button>
+            </div>
+
+            <p id="load"></p>
+
+        </form>
+    </div>
+    <!-- segment 2 -->
+
+    <!-- segment 3 -->
+    <style>
+        .seg-3 p {
+            font-size: 1rem;
+        }
+    </style>
+    <div class="seg-3">
+        <p><b>Nizar</b> <br>Mojokerto - Sidoarjo <br>2020</p>
+    </div>
+    <!-- segment 3 -->
+
+
+
+    <script src="script.js"></script>
+    <script>
+        var nama = document.getElementById("nama").value;
+        var pesan = document.getElementById("pesan").value;
+        var noticeNama = document.getElementById("notice-nama");
+        var noticePesan = document.getElementById("notice-pesan");
+        var load = document.getElementById("load");
+        var side = document.getElementById("side");
+
+        if (nama === "") {
+            noticeNama.innerHTML = "nama belum diisi !"
+        }
+        if (pesan === "") {
+            noticePesan.innerHTML = "pesan belum diisi !"
+        }
+
+
+        function kirim() {
+            load.innerHTML = "Sedang diproses ..."
+        }
+
+        function ttp() {
+            side.style.display = "";
+        }
+
+        function bukamenu() {
+            side.style.display = "block"
+        }
+
+    </script>
+</body>
+
+</html>

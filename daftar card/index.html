@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+
+        body {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: teal;
+            font-family: "Work Sans", "Helvetica", "Arial", sans-serif;
+        }
+
+        @media (min-width: 380px) and (max-width: 440px) {
+            .card {
+                /* display: none; */
+                /* width: 100px; */
+                /* background-color: teal; */
+            }
+
+            body {
+                /* padding: 10%; */
+                /* background-color: red; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <style>
+        .card {
+            width: 360px;
+            /* height: 400px; */
+            padding: 2.5%;
+            margin: 0.4%;
+            box-sizing: border-box;
+            border: 1px solid #E0E0E0;
+            border-top-color: rgb(224, 224, 224);
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-right-color: rgb(224, 224, 224);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-bottom-color: rgb(224, 224, 224);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: rgb(224, 224, 224);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-image-source: initial;
+            border-image-slice: initial;
+            border-image-width: initial;
+            border-image-outset: initial;
+            border-image-repeat: initial;
+            border-radius: 2px;
+            border-top-left-radius: 2px;
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border-bottom-left-radius: 2px;
+            box-shadow: 0px 3px 1px #E0E0E0;
+            background-color: white;
+        }
+
+        .title {
+            width: 100%;
+            display: flex;
+            box-sizing: border-box;
+            /* border: 1px solid; */
+        }
+
+        /* title 1 */
+
+        .title-1 {
+            width: 80%;
+            box-sizing: border-box;
+            /* border: 1px solid; */
+        }
+
+        .title-1 h3 {
+            margin: 0;
+            color: #4F4F4F;
+        }
+
+        .title-1 p {
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            margin: 0;
+            color: #4F4F4F;
+        }
+
+        /* title 2 */
+        .title-2 {
+            width: 20%;
+            padding: 1% 0 0 3%;
+            /* display: flex; */
+            box-sizing: border-box;
+            /* border: 1px solid; */
+        }
+
+        .title-2 p {
+            margin: 0;
+            /* justify-content: center; */
+            text-transform: uppercase;
+            color: white;
+            padding: 10%;
+            font-size: 0.8rem;
+            letter-spacing: 0.1rem;
+            display: inline-block;
+            background-color: rgb(55, 197, 55);
+            /* border: 1px solid; */
+        }
+    </style>
+
+    <div class="card">
+
+        <!-- box - 1 -->
+        <div class="title">
+            <div class="title-1">
+                <h3>MANDIRI REGULER</h3>
+                <p>Mandiri Reguler S1</p>
+            </div>
+
+            <div class="title-2">
+                <p>buka</p>
+            </div>
+        </div>
+        <!-- end box - 1 -->
+
+        <!-- box - 2 -->
+        <style>
+            .box-2 {
+                width: 100%;
+                box-sizing: border-box;
+                margin-top: 3%;
+            }
+
+            .border {
+                /* width: 50%; */
+                /* border: 1px solid; */
+            }
+
+            .w-50 {
+                width: 50%;
+                padding: 1%;
+                margin-top: 2%;
+            }
+
+            .bflex {
+                display: flex;
+            }
+
+            p.pnom {
+                margin: 0;
+            }
+
+            p.font-title {
+                margin-bottom: 1.2%;
+                font-size: 0.8rem;
+            }
+
+            p.font-desc {
+                font-size: 0.9rem;
+                color: #828282;
+            }
+
+            p.co-yellow {
+                color: #BDBDBD;
+            }
+        </style>
+
+        <div class="box-2 border">
+            <div class="b21 border bflex">
+                <div class="b21a border w-50">
+                    <p class="pnom font-title co-yellow">Mulai Pendaftaran</p>
+                    <p class="pnom font-desc">13 April 2020</p>
+                </div>
+                <div class="b21b border w-50">
+                    <p class="pnom font-title co-yellow">Akhir Pendaftaran</p>
+                    <p class="pnom font-desc">13 April 2020</p>
+                </div>
+
+            </div>
+
+            <div class="b22 border bflex">
+                <div class="b22a border w-50">
+                    <p class="pnom font-title co-yellow">Periode Pendaftaran</p>
+                    <p class="pnom font-desc">2020/2021</p>
+                </div>
+
+                <div class="b22b border w-50">
+                    <p class="pnom font-title co-yellow">Gelombang</p>
+                    <p class="pnom font-desc">UINSA</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- end box - 2 -->
+
+        <!-- box - 3 -->
+        <style>
+            .box-3 {
+                width: 100%;
+                margin-top: 1.2rem;
+                box-sizing: border-box;
+                padding-left: 5%;
+            }
+
+            .box-3 button {
+                background-color: rgb(125, 125, 224);
+                padding: 2%;
+                color: white;
+                font-size: 0.7rem;
+                /* letter-spacing: 1px; */
+                border: none;
+                /* cursor: pointer; */
+            }
+
+            .box-3 button:hover {
+                cursor: pointer;
+                background-color: rgb(224, 125, 125);
+            }
+        </style>
+        <div class="box-3 border">
+            <button id="detaill" onclick="detail()">Lihat detail</button>
+        </div>
+
+        <!-- end box - 3 -->
+
+        <!-- box - 4 -->
+        <style>
+            .box-4 {
+                width: 100%;
+                display: none;
+                /* margin-top: ; */
+                /* border: 1px solid; */
+            }
+
+            .box-4 ul {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                /* padding: 1rem 0 1rem 0; */
+                box-shadow: 3px 3px 10px #00000028;
+                /* border: 1px solid; */
+            }
+
+            .box-4 ul > li {
+                color: #6e6e6e;
+            }
+        </style>
+        <div class="box-4" id="box-4">
+            <ul>
+                <li>Mulai Pendaftaran: 13 Agustus 2020</li>
+                <li>Akhir Pendaftaran 29 Agustus 2020</li>
+                <li>Periode: 2020/2021</li>
+                <li>Gelombang: UINSA</li>
+            </ul>
+            <button onclick="close20()">close</button>
+        </div>
+        <!-- box - 4 -->
+
+
+    </div>
+
+
+
+
+    <script>
+        var box4 = document.getElementById("box-4");
+        var detaill = document.getElementById("detaill");
+
+        function detail() {
+            box4.style.display = "block";
+            detaill.style.display = "none"
+        }
+        function close20() {
+            box4.style.display = "";
+            detaill.style.display = "block"
+        }
+
+
+    </script>
+</body>
+
+</html>

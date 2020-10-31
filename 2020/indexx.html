@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belejar bersama</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #363670;
+            height: 2400px;
+        }
+
+        .container {
+            width: 600px;
+            margin: 0 auto;
+            /* display: flex; */
+            /* justify-content: center; */
+            border: 1px solid;
+        }
+
+        .box {
+            background-color: cyan;
+            border: 1px solid;
+        }
+
+        .content h1 {
+            /* visibility: hidden; */
+            /* display: none; */
+            margin: 0;
+            text-align: center;
+        }
+
+        .fullbox {
+            width: 100%;
+            margin-top: 1rem;
+            display: flex;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .fullbox .boxx {
+            width: 50%;
+            border: 1px solid;
+        }
+
+        .boxx.satu {
+            /* visibility: hidden; */
+            /* display: none; */
+            background-color: green;
+        }
+
+        .boxx.dua {
+            background-color: coral;
+        }
+
+        .tombol {
+            margin-top: 1.5rem;
+            display: flex;
+            justify-content: center;
+            border: 1px solid;
+        }
+
+        button {
+            margin: 0 0.1rem 0 0.1rem;
+            text-transform: capitalize;
+            font-size: 2.5rem;
+        }
+
+        button:hover {
+            background-color: coral;
+        }
+
+        label {
+            margin-left: 15px;
+            font-size: 2rem;
+        }
+
+        /* side */
+
+        .side {
+            width: 200px;
+            /* top: 100%; */
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            /* right: 0; */
+            /* left: 0; */
+            box-sizing: border-box;
+            background-color: coral;
+            display: none;
+            /* visibility: hidden; */
+        }
+
+        .side ul {
+            padding-left: 0;
+            padding: 12px;
+        }
+
+        .side ul li {
+            list-style-type: none;
+            padding: 5px;
+            border: 1px solid;
+        }
+
+        .side ul li:hover {
+            cursor: pointer;
+            background-color: cornflowerblue;
+        }
+
+        .aksi {
+            display: flex;
+            justify-content: center;
+            border: 1px solid;
+        }
+
+        .aksi button#side-btn {
+            font-size: 1.5rem;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="container">
+            <div class="content">
+                <h1 id="hilang">Indonesia 75</h1>
+
+                <div class="fullbox">
+                    <div class="boxx satu">
+                        <h2>box 1</h2>
+                    </div>
+                    <div class="boxx dua">
+                        <h2>box 2</h2>
+                        <button onclick="buka2020()">buka</button>
+                    </div>
+                </div>
+
+                <div class="tombol">
+                    <button onclick="btn()">hilang</button>
+                    <button onclick="btnn()">tampil</button>
+                    <label for="isi">isi</label>
+                    <input type="text" name="isi" id="isi">
+                </div>
+
+                <div class="login">
+                    <form action="" onsubmit="return masuk()">
+                        <legend>login</legend>
+
+                        <div class="input user">
+                            <label for="user">user</label>
+                            <input type="text" name="user" id="user">
+                        </div>
+                        <div class="input pass">
+                            <label for="pass">pass</label>
+                            <input type="text" name="pass" id="pass">
+                        </div>
+
+                        <div class="login-btn">
+                            <button>masuk</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .iklan {
+            width: 150px;
+            position: fixed;
+            top: 60%;
+            /* right: 23%; */
+            /* bottom: 9%; */
+            left: 70%;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .iklan .close {
+            width: 40%;
+            text-align: center;
+            /* background-color: yellow; */
+            border: 1px solid;
+        }
+
+        .iklan .close:hover {
+            cursor: pointer;
+            background-color: yellowgreen;
+        }
+
+        .iklan .close p {
+            margin: 0;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .iklan img {
+            width: 150px;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .iklan .close a {
+            font-weight: 700;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            display: block;
+            background-color: yellow;
+        }
+
+        .iklan .close a:hover {
+            color: white;
+            background-color: red;
+        }
+    </style>
+    <div class="iklan" id="iklan">
+        <div class="close">
+            <a href="#" onclick="close_iklan()">close</a>
+        </div>
+        <img src="./logo tag.png">
+    </div>
+
+    <div class="side" id="side">
+        <ul>
+            <li>satu</li>
+            <li>satu</li>
+            <li>satu</li>
+            <li>satu</li>
+            <li>satu</li>
+        </ul>
+        <div class="aksi">
+            <button onclick="side()" id="side-btn">tutup</button>
+        </div>
+    </div>
+
+    <style>
+        .sponsor-ytb {
+            width: 300px;
+            position: fixed;
+            top: 76%;
+            left: 4%;
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .sponsor-ytb video {
+            width: 100%;
+            box-sizing: border-box;
+            /* width: 300px; */
+        }
+    </style>
+    <div class="sponsor-ytb">
+        <video src="./raisa - 11 August 2020 - 01-49-48 PM.mp4 " controls autoplay></video>
+    </div>
+
+    <script>
+        function side() {
+            var side = document.getElementById("side");
+            side.style.display = "none"
+        }
+
+        function buka2020() {
+            var side = document.getElementById("side");
+            side.style.display = "block";
+        }
+
+        function close_iklan() {
+            var iklan = document.getElementById("iklan");
+            iklan.style.display = "none";
+        }
+    </script>
+
+
+    <script>
+        function btn() {
+            var hilang = document.getElementById("hilang");
+            hilang.style.display = "none";
+        }
+
+        function btnn() {
+            var hilang = document.getElementById("hilang");
+            hilang.style.display = "";
+        }
+
+        var hilang = document.getElementById("hilang");
+        var isi = document.getElementById("isi").value;
+        if (isi == "halo") {
+            hilang.style.display = "none";
+        }
+
+        function masuk() {
+            var user = document.getElementById("user").value;
+            var pass = document.getElementById("pass").value;
+            var user_set = "nizar";
+            var pass_set = "hanum2020";
+
+            if (user === "" && pass === "") {
+                alert("data belum diiisi");
+            } else if (user !== user_set && pass !== pass_set) {
+                alert("user tidak terdaftar");
+            } else if (user !== user_set) {
+                alert("user salah");
+            } else if (pass !== pass_set) {
+                alert("pass salah");
+            } else {
+                alert("sukses");
+            }
+        }
+    </script>
+</body>
+
+</html>

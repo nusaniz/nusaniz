@@ -1,0 +1,47 @@
+.btn-primary {
+    font-weight: 600;
+            letter-spacing: 0.5px;
+            font-size: 1rem;
+            color: #fff;
+            text-transform: capitalize;
+            text-align: center;
+            vertical-align: middle;
+            box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+            border-radius: .375rem;
+            /* line-height: 0; */
+            /* font-size: 20px; */
+            padding: .625rem 1.25rem;
+}
+
+.btn-primary:hover {
+    background-color: #4558c1;
+}
+
+.btn-primary.ubah {
+    border-color: #2DCE89;
+    background-color: #2DCE89;
+}
+
+.btn-primary.hapus {
+    border-color: #e24f4f;
+    background-color: #e24f4f;
+}
+
+.btn-primary.logout {
+    border-color: #e24f4f;
+    background-color: #e24f4f;
+}
+
+a.logout{
+    text-decoration: none;
+}
+
+button.btn-primary.kembali {
+    border-color: #e24f4f;
+    background-color: #e24f4f;
+}
+
+.tambah-ubah-data {
+    border-color: #2DCE89;
+    background-color: #2DCE89;
+}

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/d3d0a23fac.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            height: 1920px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #07074e;
+            color: #ffffff;
+        }
+
+        .margintop {
+            margin: 5% auto 0 auto;
+        }
+
+        .border {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- header -->
+    <style>
+        header {
+            width: 100%;
+            top: 0;
+            padding: 0.6rem 0 0.6rem 0;
+            box-sizing: border-box;
+            position: fixed;
+            background-color: teal;
+            border: 1px solid;
+        }
+
+        header h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    </style>
+    <header>
+        <h2>Data Center Intelligence N58</h2>
+    </header>
+    <!-- header -->
+
+    <!-- cont-1 -->
+    <style>
+        .cont1 {
+            max-width: 1280px;
+            /* overflow: hidden; */
+            box-sizing: border-box;
+            border: 1px solid;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .box1 {
+            flex: 1;
+            box-sizing: border-box;
+            padding: 1rem;
+            /* visibility: hidden; */
+            /* display: none; */
+            /* order: 2; */
+        }
+
+        .box1 li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* .box1 li a:hover {
+            text-decoration: underline;
+        } */
+
+        .box1 li:hover {
+            cursor: pointer;
+            padding-left: 2.5rem;
+            /* letter-spacing: 0.3rem; */
+            text-decoration: underline;
+        }
+
+        .box1 li {
+            padding: 0.5rem 0.5rem 0.5rem 2rem;
+            border: 1px solid;
+        }
+
+        .box1 ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .box1 h2 {
+            text-align: center;
+            margin: 0 0 0.8rem 0;
+        }
+
+        .dflex {
+            display: flex;
+        }
+
+        .box1 ul .text {
+            margin: 0 0 0 1rem;
+        }
+    </style>
+    <div class="cont1 margintop flex">
+
+        <!-- box 1 -->
+        <div class="box1 border">
+            <h2>menu</h2>
+            <ul aria-disabled="true">
+                <li class="dflex" onclick="window.location = 'https://drive.google.com'">
+                    <div class="icon">
+                        <i class="fa fa-hdd"></i>
+                    </div>
+                    <div class="text">
+                        <p>drive</p>
+                    </div>
+                </li>
+                <li class="dflex" onclick="satu()">
+                    <div class="icon">
+                        <i class="fa fa-hdd"></i>
+                    </div>
+                    <div class="text">
+                        <p>drive</p>
+                    </div>
+                </li>
+                <li class="dflex" onclick="dua()">
+                    <div class="icon">
+                        <i class="fa fa-hdd"></i>
+                    </div>
+                    <div class="text">
+                        <p>drive</p>
+                    </div>
+                </li>
+                <li class="dflex" onclick="window.location = '#'">
+                    <div class="icon">
+                        <i class="fa fa-hdd"></i>
+                    </div>
+                    <div class="text">
+                        <p>drive</p>
+                    </div>
+                </li>
+                <li class="dflex" onclick="window.location = '#'">
+                    <div class="icon">
+                        <i class="fa fa-hdd"></i>
+                    </div>
+                    <div class="text">
+                        <p>drive</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- box 1 -->
+
+
+        <!-- box 2 -->
+        <style>
+            .box2 {
+                box-sizing: border-box;
+                flex: 6;
+            }
+
+            .box2 #satu {
+                display: none;
+            }
+
+            .box2 #dua {
+                display: none;
+            }
+
+            .box2-one {
+                max-width: 100%;
+                padding: 0.8rem;
+                box-sizing: border-box;
+                /* align-items: center; */
+                border: 1px solid yellow;
+                /* margin: 0 auto; */
+                /* justify-content: center; */
+            }
+
+            .box2-one .cardytb {
+                /* width: 100%; */
+                padding: 0.5rem;
+                margin: 0 0.4rem 0 0.4rem;
+                box-sizing: border-box;
+                display: flex;
+                border: 1px solid;
+            }
+
+            .cardytb iframe {
+                display: block;
+            }
+
+            .box2-one .row1 {
+                display: flex;
+                box-sizing: border-box;
+                margin: 1% 0 1% 0;
+                justify-content: center;
+                border: 1px solid;
+            }
+        </style>
+        <div class="box2 border">
+
+            <div class="search">
+                <script async src="https://cse.google.com/cse.js?cx=8d656b9009b1c8f33"></script>
+                <div class="gcse-search"></div>
+            </div>
+
+
+            <!-- drive 2 -->
+            <div class="box2-one" id="satu">
+
+                <div class="row1 dflex">
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="row1 dflex">
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="cardytb dflex">
+                        <iframe width="215" height="120" src="https://www.youtube.com/embed/7oM12fMaJ5I" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+            </div>
+            <!-- drive 2 -->
+
+
+            <!-- drive 3 -->
+            <!-- <iframe id="satu" src="https://petanikode.com" frameborder="0" width="100%" height="580px"></iframe> -->
+            <p id="dua">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae voluptatum, est iure ipsum,
+                quo veritatis facere necessitatibus vitae nemo delectus quidem quod a voluptatibus exercitationem saepe,
+                aspernatur quas ea iusto!</p>
+            <!-- drive 3 -->
+
+        </div>
+
+        <!-- box 2 -->
+
+
+        <!-- cont-1 -->
+
+
+
+
+
+        <script>
+            var asatu = document.getElementById("satu");
+            var adua = document.getElementById("dua");
+            var idd = document.getElementById("identity").value;
+
+            function valid0882() {
+                if (idd !== "") {
+                    alert("202");
+                } else {
+                    alert("err");
+                }
+            }
+
+
+            function satu() {
+                asatu.style.display = "block";
+                adua.style.display = "none";
+            }
+            function dua() {
+                adua.style.display = "block";
+                asatu.style.display = "none";
+            }
+        </script>
+</body>
+
+</html>
