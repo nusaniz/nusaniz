@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,600;0,700;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>login</title>
+    <style>
+
+        body {
+            /* height: 100%; */
+            /* height: 2500px; */
+            /* background-image: url(https://hology.ub.ac.id/assets/homepage.png); */
+            padding: 4rem 0 0 0;
+            /* background-color: #0a598a; */
+            /* background-color: darkblue; */
+            /* font-family: Titillium+Web; */
+            font-family: "Titillium Web", sans-serif;
+            color: white;
+            background-image: linear-gradient(145deg, rgba(1, 24, 38, .819608) 20%, #0b4066);
+        }
+
+        form {
+            font-family: "Titillium Web", sans-serif;
+        }
+
+        h2.judul {
+            font-size: 1.5rem;
+            font-family: Titillium+Web;
+            font-weight: 800;
+            line-height: 5rem;
+            letter-spacing: 0cm;
+        }
+
+        .container form {
+            margin: 2rem 0 2rem 0;
+        }
+
+        form input {
+            padding: 12px 16px;
+            outline: none;
+            color: #fff;
+            font-weight: 300;
+            font-size: 18px;
+            background-color: hsla(0, 0%, 100%, .16);
+            border: 1.5px solid hsla(0, 0%, 100%, .16);
+            transition: all .2 ease-in-out;
+        }
+
+        .button {
+            padding: 10px 15px;
+            outline: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: "Titillium Web", sans-serif;
+            text-transform: uppercase;
+            border: none;
+            border-bottom: 5px solid #265c6b;
+            text-align: center;
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            box-shadow: 0 0 25px 10px #0a495b;
+            min-width: 130px;
+            color: #142438;
+            /* display: flex; */
+            justify-content: center;
+            background-color: #fff;
+            margin: 10rem 0 0 0;
+        }
+
+        .button:hover {
+            color: #fff;
+            background-color: #142438;
+            border-bottom: 5px solid #fff;
+            box-shadow: none;
+        }
+
+        input#exampleInputPassword1 {
+            margin: 0 0 1.5rem 0;
+        }
+
+        nav {
+            font-family: "Titillium Web", sans-serif;
+            /* color: white; */
+            /* background-color: black; */
+        }
+
+        p.create {
+            margin: 2rem 0 0 0;
+        }
+
+        p.create a {
+            color: tomato;
+        }
+
+        input.input {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 12px 16px;
+            outline: none;
+            color: #fff;
+            font-weight: 300;
+            font-size: 18px;
+            background-color: hsla(0, 0%, 100%, .16);
+            border: 1.5px solid hsla(0, 0%, 100%, .16);
+            transition: all .2 ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">NNC</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" onclick="window.document.location = 'index.html'" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Features</a>
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                    <a class="nav-link" onclick="window.document.location = 'login.html'" href="#"
+                        tabindex="-1">Login</a>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item-text">Dropdown item text</span>
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <div class="container" style="display: flex; justify-content: center;">
+        <div class="row">
+            <div class="col-md">
+                <form style="width: 250px;">
+                    <h2 class="text-center text-uppercase judul"><i>registration</i></h2>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input class="input" type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp" placeholder="Ketik di sini...">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input class="input" type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Ketik di sini...">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password confirmation</label>
+                        <input class="input" type="password" class="form-control" id="exampleInputPassword1"
+                            placeholder="Ketik di sini...">
+                    </div>
+                    <button type="submit" class="btn button btn-primaryy"
+                        style="display: flex; margin: 0 auto;">Register</button>
+                    <p class="create">If you have account, <a href="login.html">login here.</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <!-- signature -->
+    <script
+        type="text/javascript">console.log("%c\n            ▄▄▒▓▒▒▒▒▒▒▒▄▄\n         ▄▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▄         ▐▓▌  ▐▓▌ ▄▓▓▓▓▓  ▓▓▌    ▄▓▓▓▓▓   ▓▓▓▓▓ ▐▓▓  ▐▓▌\n       ▓▒░▒▒▒▒▒▓▀▀▀▀▀▀▓▓▓▓▓▓▓▄       ▐▓▌  ▐▓▌ ▓▓  ▐▓▓ ▐▓▌    ▓▓  ▐▓▓ ▓▓  ▐▓▌ ▓▓  ▓▓\n      ▓░░▒▒▒▀           ░▒▓▓▓▓█      ▐▓▌  ▓▓▌ ▓▓  ▐▓▒ ▐▓▌    ▓▓  ▐▓▒ ▓▓       ▓▓▐▓▌\n     ▓▒░░▒▒               ░░▓▓▓█     ▐▓▓▀▀▓▓▌ ▓▓  ▐▓▒ ▐▓▌    ▓▓  ▐▓▒ ▓▓ ▐▓▓▌  ▐▓▓▓\n    ▐▓▒░░▒                 ▒▒▒▓▓▌    ▐▓▌  ▐▓▌ ▓▓  ▐▓▒ ▐▓▌    ▓▓  ▐▓▒ ▓▓  ▐▓▌   ▓▓\n    ░▓█░░▒                 ▒▒▒▒▓▌    ▐▓▌  ▐▓▌ ▓▓▄▄▄▓▌ ▐▓▌▄▄▄ ▓▓▄▄▄▓▌ ▓▓▄▄▄▓▌   ▓▓\n    ▐▒▓█░░                ▐▒▓▒▒▓▌     ▀▀   ▀    ▀▀▀   ▀▀▀▀▀▀   ▀▀▀     ▀▀▀     ▀▀\n     ▒▒▓█▒▒              ▄▓▒▓▒▓▓       ▄▄▄         ▄▄▄\n      ▒▒▒▓▓▓▄           ▓▒▒▒▓▒▓      ▐░▒ ▐░▒     ▐░▒ ▐░▒\n       ▀▒▓▓▓▓▌         ▓▓▓▓▒▓▀            ░░     ▐░   ░░\n         ▀▀▀▀▄▄▄▄▄▄▄▄▄▄▄▀▀▀▀            ▒▒▒      ▐░   ░░\n            ▐▒▒▒▒▒▒▒▓▓▓▓                  ░▒     ▐░   ░░\n              ▀▀▀▀▀▀▀▀▀              ▐░   ░░     ▐░   ░░\n               ▐▒▒▓▓▓                 ▐▒▒▒░  ▐▒▒  ▒▒▒▒▒\n", "font-family: monospace; color: #5580a0; font-size: 9px"), console.log("%c Whatyou doing bro ?", "font-family: monospace; font-weight: bold; padding: 10px; background-color: #5580a0; color: white; font-size: 12px")</script>
+
+
+
+
+</body>
+
+</html>
