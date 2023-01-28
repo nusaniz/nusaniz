@@ -1,4 +1,4 @@
-### Hi there, I'm Nizar - [nusaniz][website]
+### Hi there, I'm [nusaniz][website]
 
 ## I'm a College student!!
 
